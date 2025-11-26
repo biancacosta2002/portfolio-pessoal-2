@@ -1,230 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - Template</title>
+    <title>Portfólio Pessoal - Template</title>
 
-    <!-- Bootstrap 5 via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- ====================== NAVBAR ====================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-        <a class="navbar-brand" href="#">Meu Portfólio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="height: 80px;"></div>
+
+    <!-- ================= CAROUSEL ================= -->
+    <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/5b537720-4fd5-4e89-b4d1-1e6c27dd9fc3.jpg" class="d-block w-100" alt="Banner 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bem-vindo ao meu Portfólio</h5>
+                    <p>Este é um texto genérico que poderá ser substituído.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/de85bd02-7ccd-49c0-8dc4-348c8402b236.jpg" class="d-block w-100" alt="Banner 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Projetos e Experiências</h5>
+                    <p>Apresente seus projetos de forma clara e atrativa.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/99177cb9-0771-441d-b489-9adbcc0de947.jpg" class="d-block w-100" alt="Banner 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Contato e Networking</h5>
+                    <p>Fale comigo e conheça meu trabalho.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
-                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="" class="img-fluid rounded-circle" alt="Foto genérica">
+            </div>
+            <div class="col-md-8">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou Bianca Monteiro, tenho 17 anos e estou atualmente cursando o Ensino Médio.
+                    Paralelamente, realizo um curso de Tecnologia Básica na AFESU Morro Velho, onde venho desenvolvendo 
+                    conhecimentos fundamentais em informática, ferramentas digitais e fundamentos de tecnologia.
+                    Sou uma pessoa dedicada, comprometida com o aprendizado e sempre aberta a novos desafios.
+                </p>
+            </div>
         </div>
-    </div>
-</nav>
+    </section>
 
-<!-- ====================== SOBRE MIM ====================== -->
-<section id="sobre" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Sobre mim</h2>
-        <p class="lead">
-            Meu nome é Luiza, nasci no dia 08/07/2009, na cidade de Pariquera-Açu. Desde pequena, sempre tive curiosidade sobre como as coisas funcionam, o que me levou a desenvolver um grande interesse por tecnologia. Atualmente, faço o curso de Tecnologia Básica (TB) no SENAI, onde venho aprendendo cada vez mais e descobrindo novas áreas que me motivam a continuar nesse caminho.
+    <!-- ================= HABILIDADES ================= -->
+    <section id="habilidades" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Habilidades</h2>
+            <div class="row text-center">
 
-Além da tecnologia, tenho outras paixões que fazem parte do meu dia a dia. Gosto muito de escrever, pois é uma forma de me expressar e colocar minhas ideias no papel. Também adoro ouvir músicas, algo que me acompanha em praticamente todos os momentos. E, sempre que posso, gosto de ir à praia, um dos lugares onde me sinto mais leve e tranquila.
-
-Sou uma pessoa curiosa, criativa e sempre disposta a aprender coisas novas — especialmente quando se trata do mundo da tecnologia.
-        </p>
-    </div>
-</section>
-
-<!-- ====================== HABILIDADES ====================== -->
-<section id="habilidades" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title">Habilidades</h2>
-
-        <ul>
-            <li>Apreciação literária ; </li>gosto de ler as obras de Stephen King, explorando seus estilos, temas e construções narrativas.
-            <li>Análise de filme ; </li>sou fã das adaptações cinematográficas de Stephen King, especialmente O Iluminado e It: A Coisa, prestando muita atenção aos detalhes, simbolismos e atmosfera.
-            <li>Escrita criativa ; </li>gosto de escrever histórias e poesias, desenvolvendo minha imaginação e minha capacidade de expressão.
-            <li>Sensibilidade musica ; </li>aprecio músicas dos anos 70, 80 e 90, que influenciam minha criatividade e me inspiram no dia a dia.
-        </ul>
-    </div>
-</section>
-
-<!-- ====================== PROJETOS ====================== -->
-<section id="" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Bichinhos</h2>
-
-        <div class="row g-4">
-            <!-- Card genérico -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Maya</h5>
-                        <p class="card-text">A Maya é a minha cachorrinha salsicha, uma companheira incrível e cheia de personalidade. Ela é inteligente, aprende rápido e sempre encontra um jeito próprio de demonstrar o que quer. É também extremamente amorosa, estando sempre por perto para dar carinho, receber afeto e fazer companhia. Além disso, a Maya é muito brincalhona: adora correr, explorar, pedir atenção e transformar qualquer momento simples em algo divertido.
-
-Com seu jeitinho único, ela ilumina o dia de qualquer pessoa e torna tudo ao seu redor mais leve e especial.</p>
-                    </div>
-                    <img src="imagem/c52c834d-a466-4b77-a243-ece2845447f0 (1).jpg" alt="">
+                <div class="col-md-3 mb-3">
+                    <h5>HTML</h5>
+                    <p>Descrição genérica da habilidade.</p>
                 </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>CSS</h5>
+                    <p>Descrição genérica da habilidade.</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>JavaScript</h5>
+                    <p>Descrição genérica da habilidade.</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Bootstrap</h5>
+                    <p>Descrição genérica da habilidade.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJETOS ================= -->
+    <section id="projetos" class="container py-5">
+        <h2 class="text-center mb-4">Projetos</h2>
+
+        <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+
+                <div class="carousel-item active">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Descrição genérica do projeto 1.</p>
+                            <a href="#" class="btn btn-primary w-100">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Descrição genérica do projeto 2.</p>
+                            <a href="#" class="btn btn-primary w-100">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Descrição genérica do projeto 3.</p>
+                            <a href="#" class="btn btn-primary w-100">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">Leo</h5>
-                        <p class="card-text">O Leo é meu gato cheio de personalidade, conhecido por ser bagunceiro e totalmente brincalhão. Ele está sempre inventando alguma coisa — seja derrubando objetos, correndo pela casa ou explorando lugares onde claramente não deveria estar. Apesar de ser um pouco desajeitado, é justamente isso que deixa o jeitinho dele ainda mais engraçado e único.
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
 
-Mas, acima de tudo, o Leo é muito carinhoso. Quando decide dar ou pedir carinho, se transforma no gato mais doce do mundo, sempre pronto para deitar perto, fazer companhia e arrancar um sorriso de qualquer um.
-
-Com toda essa mistura de bagunça, charme e afeto, o Leo torna os dias mais leves e muito mais divertidos.</p>
-                    </div>
-                    <img src="imagem/f6173d2c-5c2d-4369-9ecb-b4763f7b83fe.jpg" alt="">
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Luna – Uma lembrança especial</h5>
-                        <p class="card-text">A Luna foi uma cachorrinha muito especial, que deixou lembranças lindas e cheias de afeto. Ela já estava velhinha, mas isso nunca fez com que perdesse sua alegria e seu jeitinho único de viver o dia a dia. Tinha uma personalidade forte, às vezes até meio brava, mas era justamente isso que tornava ela tão autêntica e impossível de esquecer.
-
-Mesmo com a idade, a Luna ainda encontrava momentos para brincar, para demonstrar carinho e para estar presente à sua maneira. Ela marcou a vida de quem conviveu com ela, deixando saudade e também muitos sorrisos guardados na memória.
-
-A Luna foi, e sempre será, parte importante da sua história — uma companheira especial que vive agora nas lembranças mais bonitas.</p>
-                    </div>
-                    <img src="imagem/b200722f-e544-431e-adcc-e71f9d009c3b.jpg" alt="">
-                </div>
-            </div>
-
-       
-<section id="" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Familia</h2>
-
-        <div class="row g-4">
-            <!-- Card genérico -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Minha mãe e minha irmã caçula, Alice</h5>
-                       <p class="card-text">Minha mãe e minha irmã caçula, Alice, são duas pessoas muito importantes na minha vida, cada uma com um papel único e especial dentro da nossa família.
-
-Minha mãe é uma mulher forte, amorosa e dedicada. Ela cuida de todos nós com um carinho que só ela sabe dar, sempre presente, sempre tentando fazer o melhor pelos filhos. Seu amor é uma base segura, algo que eu valorizo e admiro profundamente.
-
-Já a Alice, minha irmã caçula, traz leveza e alegria para o nosso dia a dia. Com seu jeito doce e cheio de energia, ela ilumina a casa e faz qualquer momento simples se transformar em algo divertido. Ela é curiosa, afetuosa e tem aquele brilho especial de criança que faz todo mundo sorrir sem perceber.
-
-As duas, cada uma ao seu modo, tornam meus dias mais felizes e me ensinam muito sobre amor, união e família.</p>
-                    </div>
-                    <img src="imagem/0a88703b-5a86-48ad-8564-01139c4f1c52.jpg" alt="">
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">Meu pai e meu irmão mais velho</h5>
-                        <p class="card-text">Meu pai e meu irmão mais velho são duas pessoas muito importantes na minha vida. Cada um, do seu jeito, faz parte da base que me apoia, me ensina e me inspira a crescer.
-
-Meu pai é alguém que sempre esteve presente, oferecendo força, conselhos e aquele tipo de cuidado que só um pai consegue dar. Ele é uma referência, um exemplo e uma parte essencial da minha caminhada.
-
-Já meu irmão mais velho tem um papel especial também. Ele é alguém que observo, admiro e com quem aprendo muito. Mesmo quando não diz nada, o jeito dele de agir, de enfrentar as coisas e de viver a vida acaba ensinando muito. Ele é uma presença que transmite segurança e importância dentro da família.
-
-Os dois, juntos, fazem parte da minha história, do meu crescimento e da pessoa que estou me tornando — e por isso estarão sempre no meu coração.
-
-</p>
-                    </div>
-                    <img src="imagem/fe57f052-da1f-4a82-a20a-20dbb68098ba.jpg" alt="">
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Meu irmão mais novo – Kaleb</h5>
-                        <p class="card-text">O Kaleb é meu irmão mais novo, e mesmo sendo o caçula, ele tem uma presença enorme dentro da nossa família. Ele é cheio de energia, curiosidade e aquele jeito único que só os irmãos mais novos têm. Sua alegria espontânea e seu jeito divertido acabam iluminando qualquer ambiente, transformando até os dias mais simples em algo especial.
-
-Ao mesmo tempo, o Kaleb é carinhoso e sensível, alguém que sabe demonstrar afeto de um jeito sincero e verdadeiro. Convivendo com ele, aprendo todos os dias sobre paciência, companheirismo e amor entre irmãos.
-
-O Kaleb é uma parte essencial da nossa família, e sua presença torna tudo mais leve, mais divertido e mais cheio de vida.</p>
-                    </div>
-                    <img src="imagem/b12b2b28-6081-4212-b361-e6716a50e3b7.jpg" alt="">
-                </div>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
 
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- ================= CONTATO ================= -->
+    <section id="contato" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
 
-<section id="" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Amigas</h2>
-
-        <div class="row g-4">
-            <!-- Card genérico -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Minhas amigas da escola</h5>
-                       <p class="card-text">Minhas amigas da escola — Sophia Brandão, Sophia, Rita e Isa — são pessoas muito especiais na minha vida. Somos muito próximas e nos damos super bem, sempre apoiando umas às outras, rindo juntas e compartilhando momentos divertidos e inesquecíveis.
-
-Estar com elas me deixa feliz, e cada dia na escola se torna mais leve e agradável graças à amizade que construímos. Elas não são apenas colegas, mas verdadeiras amigas que tornam meu dia a dia mais alegre e especial.</p>
-                    </div>
-                    <img src="imagem/6d2c2553-4804-415e-8ae1-63d940dbf956.jpg" alt="">
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" placeholder="Seu nome">
                 </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">Minhas amigas do curso</h5>
-                        <p class="card-text">Minhas amigas do curso — Ana, Larissa, Julia e Renata — são pessoas muito especiais que conheci este ano. Apesar de termos nos encontrado recentemente, já criamos um vínculo forte e significativo.
-
-A convivência com elas é sempre divertida e inspiradora, e me sinto muito feliz por tê-las por perto. Tenho certeza de que vou sempre amar e valorizar essa amizade, independentemente do tempo ou da distância, pois elas já conquistaram um lugar importante no meu coração.</p>
-                    </div>
-                    <img src="imagem/01a00265-b59b-45fe-b1ae-4fea5334f494.jpg" alt="">
+                <div class="mb-3">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Seu e-mail">
                 </div>
-            </div>
-
-          
+                <div class="mb-3">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
 
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Meu Portfólio - Template Genérico</p>
+    </footer>
 
-<!-- ====================== CONTATO ====================== -->
-<section id="contato" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title">Contato</h2>
+    <!-- Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <p>Email: llu.peniche@gmail.com</p>
-        
-    </div>
-</section>
+</body>
+</html>
